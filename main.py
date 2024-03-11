@@ -39,10 +39,11 @@ def main():
     
 
     player = pygame.Rect(200 , HEIGHT - PLAYER_HEIGHT, PLAYER_WIDTH, PLAYER_HEIGHT)
-    elasped_time = time.time() - start_time
+
     hit = False
 
     while run:
+        elasped_time = time.time() - start_time
         star_count += clock.tick(60)
         if star_count > star_add_increment:
             for _ in range(3):
